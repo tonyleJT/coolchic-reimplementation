@@ -1,0 +1,11 @@
+seed: 1234
+
+device: cuda
+
+training:
+  steps: 500
+  learning_rate: 0.01
+  lambda: 0.001
+
+logging:
+  print_every: 50

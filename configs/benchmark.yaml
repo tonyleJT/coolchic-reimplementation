@@ -1,0 +1,28 @@
+# Stage 12 Kodak experiment.
+#
+# Lambda values are project choices for exploring the rate-distortion curve.
+# They are not claimed to be the exact lambda values used by the COOL-CHIC paper.
+
+dataset_dir: data/kodak
+
+images:
+  - kodim01.png
+  - kodim07.png
+  - kodim13.png
+  - kodim19.png
+
+lambdas:
+  - 0.0001
+  - 0.0002
+  - 0.0004
+  - 0.0008
+
+steps: 40000
+learning_rate: 0.01
+seed: 1234
+
+log_every: 1000
+
+runs_dir: results/kodak_runs
+results_csv: results/kodak_results.csv
+summary_csv: results/kodak_summary.csv
